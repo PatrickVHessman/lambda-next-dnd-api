@@ -16,7 +16,7 @@ export default function Layout ({children}) {
     <a>Spells</a>
   </Link>
   {" | "} 
-  <a href="#">
+  <a href="https://github.com/PatrickVHessman/lambda-next-dnd-api">
     <a>View Source</a>
   </a>
   </div>
