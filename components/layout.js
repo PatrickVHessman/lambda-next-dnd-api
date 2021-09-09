@@ -9,7 +9,11 @@ export default function Layout ({children}) {
         <h1 className={styles.title}>
           AWS Lambda and Next.js Dungeons & Dragons API Browser
         </h1>
-        <div className={styles.headerLinks}><Link href="/">
+        <div className={styles.headerLinks}>
+        <Link href="/">
+    <a>Overview</a>
+  </Link> {" | "} 
+          <Link href="/races/">
     <a>Races</a>
   </Link> {" | "} 
   <Link href="/spells/">

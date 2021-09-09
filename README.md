@@ -24,3 +24,6 @@ A Node/Express API server was created to handle the database requests of the pro
 
 ## Next.js Front-End
 The front end was created with Next.js and has two pages to navigate to, one to display player races and one to display spells. Both call on the  lambda function to retrieve the information for each category via the `axios` package.
+
+## SEO
+The spells and races now have individualized, dynamically generated routes. As the page is served statically by Amazon S3, I have used the `getStaticPaths`/`getStaticProps` methods to generate the routes. However, I have also included Next's `getInitialProps` metod in comments, as this is what would be used if the app was being served by an express server. This allows pages to be properly indexed by Google despite the browser being a single page application. Error handling has also been included in case of hiccups in the interaction with the API.
